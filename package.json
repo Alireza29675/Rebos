@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "description": "",
+  "name": "rebos",
+  "description": "Experimental IDE for Music",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
