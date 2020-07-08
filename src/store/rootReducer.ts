@@ -1,3 +1,7 @@
 import { combineReducers } from "redux"
 
-export default combineReducers({})
+import noopReducer from "./noop/noopReducer"
+
+export default combineReducers({
+  noop: noopReducer,
+})
