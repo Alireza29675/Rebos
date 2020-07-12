@@ -1,4 +1,4 @@
-import { NOOP } from "./noopTypes"
+import { NOOP } from "./types"
 
 export const doNoop = () => {
   return {

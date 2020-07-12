@@ -1,7 +1,7 @@
 import { combineReducers } from "redux"
 
-import noopReducer from "./noop/noopReducer"
+import atomReducer from "./atom/reducer"
 
 export default combineReducers({
-  noop: noopReducer,
+  atom: atomReducer,
 })

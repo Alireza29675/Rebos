@@ -1,2 +1,12 @@
-@import './abstracts/index', 
-'./base/index';
+@import "./abstracts/index", "./base/index";
+
+body {
+  overflow: hidden;
+  background: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}

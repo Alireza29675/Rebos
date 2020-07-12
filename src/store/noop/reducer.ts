@@ -1,6 +1,6 @@
 import { Reducer } from "redux"
 
-import { NOOP } from "./noopTypes"
+import { NOOP } from "./types"
 
 const initalState = {}
 
