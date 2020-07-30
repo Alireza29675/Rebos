@@ -1,3 +1,6 @@
+// Gradients
+$primary-gradient: linear-gradient($primary-color, darken($primary-color, 10%));
+
 // Mixins
 @mixin box {
   background: linear-gradient($grey-4, $grey-3);
@@ -10,6 +13,33 @@
   transform: translate(-50%, -50%);
 }
 
+@mixin center-y {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin center-x {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 @mixin rounded {
   border-radius: $global-border-radius;
+}
+
+@mixin clickable {
+  cursor: pointer;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+@mixin unclickable {
+  cursor: default;
+
+  &:hover {
+    opacity: 1;
+  }
 }

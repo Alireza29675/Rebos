@@ -1,5 +1,5 @@
 <template>
-  <div class="AtomTab AtomTab__active">
+  <div class="AtomTab" :class="{ 'AtomTab--active': active }">
     <div class="AtomTab__icon">
       {{ title | abbr }}
     </div>
@@ -10,6 +10,7 @@
 export default {
   props: {
     title: String,
+    active: Boolean,
   },
   filters: {
     abbr(value) {
@@ -25,22 +26,29 @@ export default {
   height: 0;
   padding-bottom: 100%;
   position: relative;
+  @include clickable;
 
-  &--active::after {
-    content: '';
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: $primary-color;
-    position: absolute;
+  &--active{
+    @include unclickable;
+
+    &::after {
+      content: '';
+      width: 10px;
+      height: 50%;
+      border-radius: 5px;
+      background: $primary-gradient;
+      position: absolute;
+      @include center-y;
+      left: -7px;
+    }
   }
 
   &__icon {
     @include center;
     @include rounded;
     position: absolute;
-    width: 75%;
-    height: 75%;
+    width: 70%;
+    height: 70%;
     background: $grey-5;
     font-size: 1em;
     display: grid;

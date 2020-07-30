@@ -20,12 +20,15 @@ export default {
       atoms: [
         {
           title: 'Atom 1',
+          active: true,
         },
         {
           title: 'Atom 2',
+          active: false,
         },
         {
           title: 'Atom 3',
+          active: false,
         },
       ],
     };
