@@ -17,7 +17,7 @@ export default {
   height: 0;
   padding-bottom: 100%;
   background: blue;
-  margin-bottom: 10px;
+  margin-bottom: $global-margin * 0.5;
   position: relative;
 }
 </style>

@@ -17,6 +17,10 @@ $text-secondary-color: #86898c;
 // Fonts
 $primary-font: "Poppins", Helvetica, Arial, sans-serif;
 
+// Spacing
+$global-margin: 1rem;
+$global-padding: 1rem;
+
 // Mixins
 @mixin box {
   background: linear-gradient($grey-4, $grey-3);

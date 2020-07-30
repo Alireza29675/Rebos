@@ -27,12 +27,12 @@ export default {
   align-items: stretch;
   justify-content: center;
   font-size: 0.8rem;
-  padding: 0 10px;
+  padding: 0 $global-padding;
 
   &__item {
     display: flex;
     align-items: center;
-    padding: 0 0.7em;
+    padding: 0 $global-padding * 0.6;
     cursor: pointer;
 
     &:hover {
