@@ -11,6 +11,6 @@ export default {
 <style lang="scss">
 .FooterView {
   height: 100px;
-  background: blue;
+  background: $primary-color;
 }
 </style>

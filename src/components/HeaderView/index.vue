@@ -11,6 +11,6 @@ export default {
 <style lang="scss">
 .HeaderView {
   height: 100px;
-  background: red;
+  background: $primary-color;
 }
 </style>
