@@ -1,1 +1,6 @@
-@import 'abstracts', 'base', 'helpers'
+@import 'abstracts', 'base', 'helpers', 'fonts';
+
+body {
+  font-family: $primary-font;
+  color: $text-color;
+}

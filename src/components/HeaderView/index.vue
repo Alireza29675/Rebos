@@ -1,16 +1,22 @@
 <template>
-  <div class="HeaderView"></div>
+  <div class="HeaderView">
+    <Menu />
+  </div>
 </template>
 
 <script>
-export default {
+import Menu from './Menu.vue';
 
+export default {
+  components: {
+    Menu,
+  },
 };
 </script>
 
 <style lang="scss">
 .HeaderView {
-  height: 100px;
-  background: $primary-color;
+  @include box;
+  height: 30px;
 }
 </style>

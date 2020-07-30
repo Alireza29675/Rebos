@@ -26,6 +26,7 @@ export default {
   flex-direction: column;
   width: 100vw;
   min-height: 100vh;
+  background: $bg-color;
 }
 .app__body {
   flex-grow: 1;

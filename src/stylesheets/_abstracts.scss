@@ -1,3 +1,24 @@
 // Colors
-$primary-color: green;
-$secondary-color: yellow;
+$grey-1: #181a1d;
+$grey-2: lighten($grey-1, 2%);
+$grey-3: lighten($grey-1, 4%);
+$grey-4: lighten($grey-1, 8%);
+$grey-5: lighten($grey-1, 12%);
+$grey-6: lighten($grey-1, 14%);
+
+$primary-color: #ee540f;
+$secondary-color: #a68119;
+
+$bg-color: $grey-1;
+
+$text-color: #a6a7a9;
+$text-secondary-color: #86898c;
+
+// Fonts
+$primary-font: "Poppins", Helvetica, Arial, sans-serif;
+
+// Mixins
+@mixin box {
+  background: linear-gradient($grey-4, $grey-3);
+  color: $text-color;
+}
