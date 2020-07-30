@@ -30,5 +30,8 @@ export default {
 }
 .app__body {
   flex-grow: 1;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
 }
 </style>
