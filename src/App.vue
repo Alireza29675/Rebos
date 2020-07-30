@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <HeaderView />
-    <router-view />
+    <div class="app__body">
+      <router-view />
+    </div>
     <FooterView />
   </div>
 </template>
@@ -19,5 +21,13 @@ export default {
 </script>
 
 <style lang="scss">
-
+#app {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  min-height: 100vh;
+}
+.app__body {
+  flex-grow: 1;
+}
 </style>
