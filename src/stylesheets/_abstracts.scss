@@ -20,9 +20,4 @@ $primary-font: "Poppins", Helvetica, Arial, sans-serif;
 // Spacing
 $global-margin: 1rem;
 $global-padding: 1rem;
-
-// Mixins
-@mixin box {
-  background: linear-gradient($grey-4, $grey-3);
-  color: $text-color;
-}
+$global-border-radius: 0.6rem;

@@ -37,6 +37,7 @@ export default {
 .AtomBar {
   height: 100%;
   min-width: 60px;
+  padding-top: $global-padding * 0.2;
   background: linear-gradient($grey-2, $grey-1);
 }
 </style>

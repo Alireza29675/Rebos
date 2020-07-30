@@ -1,0 +1,15 @@
+// Mixins
+@mixin box {
+  background: linear-gradient($grey-4, $grey-3);
+  color: $text-color;
+}
+
+@mixin center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin rounded {
+  border-radius: $global-border-radius;
+}
