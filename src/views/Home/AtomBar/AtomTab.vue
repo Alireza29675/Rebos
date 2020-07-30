@@ -12,11 +12,6 @@ export default {
     title: String,
     active: Boolean,
   },
-  filters: {
-    abbr(value) {
-      return value.split(' ').map((part) => part[0].toUpperCase()).join('');
-    },
-  },
 };
 </script>
 

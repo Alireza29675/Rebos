@@ -30,6 +30,30 @@ export default {
           title: 'Atom 3',
           active: false,
         },
+        {
+          title: 'Atom 4',
+          active: false,
+        },
+        {
+          title: 'Atom 5',
+          active: false,
+        },
+        {
+          title: 'Atom 6',
+          active: false,
+        },
+        {
+          title: 'Atom 7',
+          active: false,
+        },
+        {
+          title: 'Atom 8',
+          active: false,
+        },
+        {
+          title: 'Atom 9',
+          active: false,
+        },
       ],
     };
   },
