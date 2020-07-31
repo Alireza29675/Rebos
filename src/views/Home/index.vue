@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import AtomEditor from './AtomEditor.vue';
+import AtomEditor from './AtomEditor/index.vue';
 import AtomBar from './AtomBar/index.vue';
 
 export default {
