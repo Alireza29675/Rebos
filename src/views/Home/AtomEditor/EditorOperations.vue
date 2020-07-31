@@ -2,7 +2,7 @@
   <div class="EditorOperations">
     <ul class="EditorOperations__list">
       <li class="EditorOperations__item" v-for="(operation, index) of operations" :key="index">
-        <Icon name="right-arrow"></Icon>
+        <Icon :name="operation.icon"></Icon>
       </li>
     </ul>
   </div>
@@ -18,8 +18,8 @@ export default {
   computed: {
     operations() {
       return [
-        { title: 'run' },
-        { title: 'debug' },
+        { title: 'Run', icon: 'play' },
+        { title: 'Debug', icon: 'pause' },
       ];
     },
   },
@@ -41,6 +41,9 @@ export default {
   &__item {
     width: 30px;
     height: 30px;
+    display: grid;
+    place-items: center;
+    @include clickable;
 
     &:hover {
       background: $grey-5;
