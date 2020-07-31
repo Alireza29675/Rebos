@@ -1,3 +1,5 @@
+const MonacoEditorPlugin = require('monaco-editor-webpack-plugin');
+
 module.exports = {
   css: {
     loaderOptions: {
@@ -5,5 +7,12 @@ module.exports = {
         prependData: '@import "@/stylesheets/main.scss";',
       },
     },
+  },
+  configureWebpack: {
+    plugins: [
+      new MonacoEditorPlugin({
+        languages: ['javascript', 'css', 'html', 'typescript'],
+      }),
+    ],
   },
 };
